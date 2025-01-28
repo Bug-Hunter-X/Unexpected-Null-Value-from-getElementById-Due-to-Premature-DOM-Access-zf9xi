@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    // Accessing the element AFTER it is fully loaded into the DOM.
+    const myDiv = document.getElementById('myDiv');
+    myDiv.innerHTML = "<p>This is added later</p>";
+  </script>
+</body>
+</html>
