@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    // Attempting to access a non-existent element by ID before it's added to the DOM
+    const myDiv = document.getElementById('myDiv');
+    myDiv.innerHTML = "<p>This is added later</p>"; //Error: myDiv is null
+  </script>
+</body>
+</html>
